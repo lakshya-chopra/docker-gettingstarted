@@ -39,3 +39,31 @@ download the current stable release of Docker Compose:
 Apply executable permissions to the binary:
 
     sudo chmod +x /usr/local/bin/docker-compose
+
+2)Pull nginx & hello-world:  
+  
+        docker pull hello-world
+        docker pull nginx
+
+3)Port forward nginx to port 80: <br>
+    `docker run --name mynginxl -p 80:80 -d nginx`
+
+Open your public ip after successfully executing this commaND.
+
+4)View images: <br>
+
+  `docker images`
+
+5)Pull apache2: <br>
+
+   `docker pull ubuntu/apache2`
+
+6) Kill nginx to allocate port 80 to apache2: <br>
+   `docker kill <container_id_nginx>`
+
+  To grab the container id of nginx, run docker ps.
+
+7) Finally, port apache2 to port 80: <br>
+   `docker run --name apache -p 80:80 -d ubuntu/apache2`
+
+   and reopen your public ip.
