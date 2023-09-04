@@ -1,6 +1,6 @@
 # docker-gettingstarted
 
-1) Install Docker on your VM with the help of the following commands:
+1) Install Docker on your VM with the help of the following commands (only for Ubuntu and Debian Operating Systems)
 
   install packages:
 
