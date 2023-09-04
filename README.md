@@ -61,7 +61,7 @@ Open your public ip after successfully executing this commaND.
 6) Kill nginx to allocate port 80 to apache2: <br>
    `docker kill <container_id_nginx>`
 
-  To grab the container id of nginx, run docker ps.
+  To grab the container id of nginx, run `docker ps`
 
 7) Finally, port apache2 to port 80: <br>
    `docker run --name apache -p 80:80 -d ubuntu/apache2`
