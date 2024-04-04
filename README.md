@@ -65,6 +65,11 @@ Open your public ip after successfully executing this commaND.
 
 7) Finally, port apache2 to port 80: <br>
    `docker run --name apache -p 80:80 -d ubuntu/apache2`
-
    and reopen your public ip.
+8) Next up, we can implement networking b/w 2 or multiple containers using bridges.
+9) We could also share files b/w 2 containers by creating a docker volume.
+10) Containerd is a docker container runtime, which is high level and comprises runc + high level functions.
+11) Dockerfile can be used to provide the format and configurations of a docker image, which can later be used to create containers (using docker build).
+12) One can also expose and publish the container's ports to the host machine.
+
 [references](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
