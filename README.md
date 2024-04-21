@@ -76,4 +76,30 @@ Open your public ip after successfully executing this commaND.
 15) --rm to flag to immediately end the container after the use.
 16) -v to mount some hosts directory to the container.
 
-[references](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+
+## Dockerfile:
+Commands:
+ - COPY
+ - EXPOSE
+ - WORKDIR
+ - CMD
+ - RUN
+ - FROM 
+ 
+ 1. COPY in dockerfile only takes in relative paths, all the other paths must be added in the build context. 
+2. WORKDIR creates a new directory in the container if it doesnt exist. 
+3. RUN mkdir is used to create a directory in the container's filesystem.
+
+4. Expose the port so that the app running in the container can listen on that port
+
+5. After that we publish that port to the host so that we can access it from the anywhere in the host's system (provided the container is running)
+This is done using `docker run -p or -P commands`. We can also use something like this : `81:80` which mounts the host's port 81 to the container's port 80. 
+
+
+## References: 
+
+[ref](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+
+[containerd vs runc vs shim, detailed](https://stackoverflow.com/a/51802719/15120502)
+
+
