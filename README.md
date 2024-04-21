@@ -71,5 +71,8 @@ Open your public ip after successfully executing this commaND.
 10) Containerd is a docker container runtime, which is high level and comprises runc + high level functions.
 11) Dockerfile can be used to provide the format and configurations of a docker image, which can later be used to create containers (using docker build).
 12) One can also expose and publish the container's ports to the host machine.
+13) --network flag can be used while running a container to connect it to some local network (like for example: Localhost)
+14) -it flag to open the container in an interactive mode.
+15) -rm to flag to immediately end the container after the use.
 
 [references](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
