@@ -73,6 +73,7 @@ Open your public ip after successfully executing this commaND.
 12) One can also expose and publish the container's ports to the host machine.
 13) --network flag can be used while running a container to connect it to some local network (like for example: Localhost)
 14) -it flag to open the container in an interactive mode.
-15) -rm to flag to immediately end the container after the use.
+15) --rm to flag to immediately end the container after the use.
+16) -v to mount some hosts directory to the container.
 
 [references](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
